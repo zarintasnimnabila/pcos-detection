@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test</title>
+  <!-- <link rel="stylesheet" href="/style/style.css" /> -->
+  <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+></script>
+</head>
+
+<body>
+
+<header>
+        <style>
+          #intro {
+            background-image: url(https://mdbootstrap.com/img/new/fluid/city/008.jpg);
+            height: 100vh;
+          }
+  
+          /* Height for devices larger than 576px */
+          @media (min-width: 992px) {
+            #intro {
+              margin-top: -58.59px;
+            }
+          }
+  
+          .navbar .nav-link {
+            color: #fff !important;
+          }
+        </style>
+  
+        <!-- Navbar -->
+        <nav
+          class="navbar navbar-expand-lg navbar-dark d-none d-lg-block"
+          style="z-index: 2000"
+        >
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a
+            class="navbar-brand nav-link"
+            target="_blank"
+            href="#"
+          >
+            <strong>PDS</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="/home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/index.html"
+                  rel="nofollow"
+                  >Test</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/output.html"
+                  >Report</a
+                >
+              </li>
+            </ul>
+  
+            <ul class="navbar-nav d-flex flex-row">
+              <!-- Icons -->
+              <li class="nav-item me-3 me-lg-0">
+                <a
+                  class="nav-link"
+                  href="#"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a
+                  class="nav-link"
+                  href="#"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a
+                  class="nav-link"
+                  href="#"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a
+                  class="nav-link"
+                  href="#"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+        <!-- Navbar -->
+  
+        <!-- Background image -->
+        
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-10 col-md-8 bg-white rounded-5 shadow-5-strong p-5">
+                <p class="h2 text-center">PCOS Questionnaire</p>
+                <form id="pcos-form">
+              
+                  <div class="form-check mb-3">
+                  <p class="h5">Do you have PCOS?</p>
+                  <input class="form-check-input" type="radio" id="pcos1" name="pcos" value="yes" required />
+                  <label class="form-check-label" for="pcos1">Yes</label>
+                  <br />
+                  <input class="form-check-input" type="radio" name="pcos" id="pcos2" value="no"
+                    required />
+                    <label class="form-check-label" for="pcos2">No</label>
+                </div>
+
+                <div class="form-check mb-3">
+                  <p class="h5">Do any members of your family have a history of PCOS?</p>
+                  <input class="form-check-input" type="radio" id="family_pcos1" name="family_pcos" value="yes" required />
+                  <label class="form-check-label" for="family_pcos1">Yes</label>
+                  <br />
+                  <input class="form-check-input" type="radio" id="family_pcos2" name="family_pcos" value="no" required />
+                  <label class="form-check-label" for="family_pcos2">No</label>
+                </div>
+                
+                <div class="form-check mb-3">
+                  <p class="h5">Are you married?</p>
+                  <input class="form-check-input" type="radio" id="married1" name="married" value="yes" required />
+                  <label class="form-check-label" for="married1">Yes</label>
+                  <br />
+                  <input class="form-check-input" type="radio" id="married2" name="married" value="no" required />
+                  <label class="form-check-label" for="married2">No</label>
+                </div>
+              
+                <div class="form-check mb-3">
+                  <p class="h5">Do you have a cyst in your ovary?</p>
+                  <input class="form-check-input" type="radio" id="ovary_cyst1" name="ovary_cyst" value="yes" required />
+                  <label class="form-check-label" for="ovary_cyst1">Yes</label>
+                  <br />
+                  <input class="form-check-input" type="radio" id="ovary_cyst2" name="ovary_cyst" value="no" required />
+                  <label class="form-check-label" for="ovary_cyst2">No</label>
+                </div>
+
+                <div class="form-outline">
+                  <p class="h5">What is your height?</p>
+                  <input type="text" name="height" class="form-control bg-secondary"/>
+                </div>
+
+                <div class="form-outline">
+                  <p class="h5 mt-3">What is your weight?</p>
+                  <input type="text" name="weight" class="form-control bg-secondary" />
+                </div>
+
+                  <div class="form-check mt-3 mb-3">
+                    <p class="h5">Are you overweight?</p>
+                    <input class="form-check-input" type="radio" id="overweight1" name="overweight" value="yes" required />
+                    <label class="form-check-label" for="overweight1">Yes</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="overweight2" name="overweight" value="no" required />
+                    <label class="form-check-label" for="overweight2">No</label>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <p class="h5">How is your period cycle?</p>
+                    <input class="form-check-input" type="radio" id="period_cycle1" name="period_cycle" value="regular" required />
+                    <label class="form-check-label" for="period_cycle1">Regular</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="period_cycle2" name="period_cycle" value="irregular" required />
+                    <label class="form-check-label" for="period_cycle2">Irregular</label>
+                  </div>
+              
+                  <div class="form-check mb-3">
+                    <p class="h5">How much is the level of your abdominal pain?</p>
+                    <input class="form-check-input" type="radio" id="abdominal_pain1" name="abdominal_pain" value="normal" required />
+                    <label class="form-check-label" for="abdominal_pain1">Normal</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="abdominal_pain2" name="abdominal_pain" value="medium_high" required />
+                    <label class="form-check-label" for="abdominal_pain2">Medium OR High</label>
+                  </div>
+              
+                  <div class="form-check mb-3">
+                    <p class="h5">Do you have hormonal imbalance?</p>
+                    <input class="form-check-input" type="radio" id="hormonal_imbalance1" name="hormonal_imbalance" value="yes" required />
+                    <label class="form-check-label" for="hormonal_imbalance1">Yes</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="hormonal_imbalance2" name="hormonal_imbalance" value="no" required />
+                    <label class="form-check-label" for="hormonal_imbalance2">No</label>
+                  </div>
+
+                  
+                  <div class="form-check mb-3">
+                    <p class="h5">Which symptoms of PCOS do you have?</p>
+                  <input type="checkbox" name="pcos_symptoms[]" value="Facial Hair" />
+                  Facial Hair
+                  <input type="checkbox" name="pcos_symptoms[]" value="Body Hair" /> Body
+                  Hair
+                  <input type="checkbox" name="pcos_symptoms[]" value="Dark skin" /> Dark
+                  skin <input type="checkbox" name="pcos_symptoms[]" value="Acne" /> Acne
+                  <input type="checkbox" name="pcos_symptoms[]" value="Facial Pimples" />
+                  Facial Pimples
+                  <input type="checkbox" name="pcos_symptoms[]" value="Hair Loss" /> Hair
+                  Loss <input type="checkbox" name="pcos_symptoms[]" value="Other" /> Other
+              
+
+
+                  <div class="form-check mt-3 mb-3">
+                    <p class="h5">Did you gain weight?</p>
+                    <input class="form-check-input" type="radio" id="weight_gain1" name="weight_gain" value="yes" required />
+                    <label class="form-check-label" for="weight_gain1">Yes</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="weight_gain2" name="weight_gain" value="no" required />
+                    <label class="form-check-label" for="weight_gain2">No</label>
+                  </div>
+
+
+                  <div class="form-check mb-3">
+                    <p class="h5">What is the LH hormone level?</p>
+                    <input class="form-check-input" type="radio" id="lh_hormone1" name="lh_hormone" value="normal" required />
+                    <label class="form-check-label" for="lh_hormone1">Normal</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="lh_hormone2" name="lh_hormone" value="abnormal" required />
+                    <label class="form-check-label" for="lh_hormone2">Abnormal</label>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <p class="h5">What is the FSH Hormone level?</p>
+                    <input class="form-check-input" type="radio" id="fsh_hormone1" name="fsh_hormone" value="normal" required />
+                    <label class="form-check-label" for="fsh_hormone1">Normal</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="fsh_hormone2" name="fsh_hormone" value="abnormal" required />
+                    <label class="form-check-label" for="fsh_hormone2">Abnormal</label>
+                  </div>
+              
+                  <div class="form-check mb-3">
+                    <p class="h5">What is the TSH Hormone level?</p>
+                    <input class="form-check-input" type="radio" id="tsh_hormone1" name="tsh_hormone" value="normal" required />
+                    <label class="form-check-label" for="tsh_hormone1">Normal</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="tsh_hormone2" name="tsh_hormone" value="abnormal" required />
+                    <label class="form-check-label" for="tsh_hormone2">Abnormal</label>
+                  </div>
+
+
+                  <div class="form-check mb-3">
+                    <p class="h5">What is the Prolactin Hormone level?</p>
+                    <input class="form-check-input" type="radio" id="prolactin_hormone1" name="prolactin_hormone" value="normal" required />
+                    <label class="form-check-label" for="prolactin_hormone1">Normal</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="prolactin_hormone2" name="prolactin_hormone" value="abnormal" required />
+                    <label class="form-check-label" for="prolactin_hormone2">Abnormal</label>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <p class="h5">What is the Hemoglobin level?</p>
+                    <input class="form-check-input" type="radio" id="hemoglobin_level1" name="hemoglobin_level" value="normal" required />
+                    <label class="form-check-label" for="hemoglobin_level1">Normal</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="hemoglobin_level2" name="hemoglobin_level" value="abnormal" required />
+                    <label class="form-check-label" for="hemoglobin_level2">Abnormal</label>
+                  </div>
+
+
+                  <div class="form-check mb-3">
+                    <p class="h5">What is the level of your blood pressure?</p>
+                    <input class="form-check-input" type="radio" id="blood_pressure_level1" name="blood_pressure_level" value="normal" required />
+                    <label class="form-check-label" for="blood_pressure_level1">Normal</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="blood_pressure_level2" name="blood_pressure_level" value="high" required />
+                    <label class="form-check-label" for="blood_pressure_level2">High</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="blood_pressure_level3" name="blood_pressure_level" value="low" required />
+                    <label class="form-check-label" for="blood_pressure_level3">Low</label>
+                  </div>
+
+
+                  <div class="form-check mb-3">
+                    <p class="h5">How is your Mood swing Level during a period?</p>
+                    <input class="form-check-input" type="radio" id="mood_swing_level1" name="mood_swing_level" value="normal" required />
+                    <label class="form-check-label" for="mood_swing_level1">Normal</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="mood_swing_level2" name="mood_swing_level" value="medium" required />
+                    <label class="form-check-label" for="mood_swing_level2">Medium</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="mood_swing_level3" name="mood_swing_level" value="high" required />
+                    <label class="form-check-label" for="mood_swing_level3">High</label>
+                  </div>
+        
+              
+                  <div class="form-check mb-3">
+                    <p class="h5">Do your PCOS symptoms make you depressed?</p>
+                    <input class="form-check-input" type="radio" id="pcos_depressed1" name="pcos_depressed" value="yes" required />
+                    <label class="form-check-label" for="pcos_depressed1">Yes</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="pcos_depressed2" name="pcos_depressed" value="no" required />
+                    <label class="form-check-label" for="pcos_depressed2">No</label>
+                  </div>
+                  
+
+                  <div class="form-check mb-3">
+                    <p class="h5">Do you experience mental stress as a result of having PCOS?</p>
+                    <input class="form-check-input" type="radio" id="pcos_stress1" name="pcos_stress" value="yes" required />
+                    <label class="form-check-label" for="pcos_stress1">Yes</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="pcos_stress2" name="pcos_stress" value="no" required />
+                    <label class="form-check-label" for="pcos_stress2">No</label>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <p class="h5">Do you experience insomnia as a result of having PCOS?</p>
+                    <input class="form-check-input" type="radio" id="pcos_insomnia1" name="pcos_insomnia" value="yes" required />
+                    <label class="form-check-label" for="pcos_insomnia1">Yes</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="pcos_insomnia2" name="pcos_insomnia" value="no" required />
+                    <label class="form-check-label" for="pcos_insomnia2">No</label>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <p class="h5">Do you find that having PCOS slows down your regular activities?</p>
+                    <input class="form-check-input" type="radio" id="pcos_slow_activities1" name="pcos_slow_activities" value="yes" required />
+                    <label class="form-check-label" for="pcos_slow_activities1">Yes</label>
+                    <br />
+                    <input class="form-check-input" type="radio" id="pcos_slow_activities2" name="pcos_slow_activities" value="no" required />
+                    <label class="form-check-label" for="pcos_slow_activities2">No</label>
+                  </div>
+
+                  <br />
+                  <input class="btn btn-primary btn-block mb-4" type="submit" onclick="sendData()" value="Submit" />
+                </form>
+                <div id="result"></div>
+                 
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- Background image -->
+
+</header>  
+
+  <script>
+    document.getElementById("pcos-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const formElements = event.target.elements;
+
+      const hasPCOS = formElements["pcos"].value === "yes";
+
+      const allYesAndNormal =
+        hasPCOS &&
+        formElements["family_pcos"].value === "yes" &&
+        formElements["married"].value === "yes" &&
+        formElements["ovary_cyst"].value === "yes" &&
+        formElements["overweight"].value === "yes" &&
+        formElements["period_cycle"].value === "regular" &&
+        formElements["abdominal_pain"].value === "normal" &&
+        formElements["hormonal_imbalance"].value === "yes" &&
+        formElements["weight_gain"].value === "yes" &&
+        formElements["lh_hormone"].value === "normal" &&
+        formElements["fsh_hormone"].value === "normal" &&
+        formElements["tsh_hormone"].value === "normal" &&
+        formElements["prolactin_hormone"].value === "normal" &&
+        formElements["hemoglobin_level"].value === "normal" &&
+        formElements["blood_pressure_level"].value === "normal" &&
+        formElements["mood_swing_level"].value === "normal" &&
+        formElements["pcos_depressed"].value === "yes" &&
+        formElements["pcos_stress"].value === "yes" &&
+        formElements["pcos_insomnia"].value === "yes" &&
+        formElements["pcos_slow_activities"].value === "yes";
+
+      let outputMessage =
+        hasPCOS && allYesAndNormal
+          ? "You have PCOS"
+          : "You don’t have PCOS";
+
+      document.getElementById("result").innerHTML = `
+          <p>${outputMessage}</p>
+          ${hasPCOS && allYesAndNormal ? contentForPCOS() : ""}
+        `;
+
+      if (hasPCOS && allYesAndNormal) {
+        const content = contentForPCOS();
+        const dataToSend = { data: content };
+        const queryString = new URLSearchParams(dataToSend).toString();
+        const destinationUrl = "output.html?" + queryString;
+        window.location.href = destinationUrl;
+      }
+      if (!hasPCOS || !allYesAndNormal) {
+        const content = contentForPCOS2();
+        const dataToSend = { data: content };
+        const queryString = new URLSearchParams(dataToSend).toString();
+        const destinationUrl = "output.html?" + queryString;
+        window.location.href = destinationUrl;
+      }
+    });
+
+    function contentForPCOS() {
+      return `
+          <h1>Sorry! you have PCOS.</h1><br>
+          <h4>Suggestions:</h4>
+          <ul class="list-unstyled">
+  <li class="mb-1"><i class="fas fa-check-circle me-2 text-success"></i>Visit a gynecologist.</li></li>
+  <li class="mb-1"><i class="fas fa-check-circle me-2 text-success"></i>Do regular exercise.</li></li>
+  <li class="mb-1"><i class="fas fa-check-circle me-2 text-success"></i>Have a healthy diet.</li></li>
+          </ul>
+        `;
+    }
+    function contentForPCOS2() {
+      return `
+          <h3>Good News! You don’t have PCOS.</h3>
+          <p>Please Consult With a Doctor Immediatly. And Tell what you are Feeling.</p>
+        `;
+    }
+
+  </script>
+  
+      <footer class="bg-dark text-lg-start">
+        
+  
+        <hr class="m-0" />
+  
+        <div class="text-center py-4 align-items-center">
+          <p style="color: white;">Follow Our social media</p>
+          <a
+            href="#"
+            class="btn btn-primary m-1"
+            role="button"
+            rel="nofollow"
+            target="_blank"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="#"
+            class="btn btn-primary m-1"
+            role="button"
+            rel="nofollow"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            class="btn btn-primary m-1"
+            role="button"
+            rel="nofollow"
+            target="_blank"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            class="btn btn-primary m-1"
+            role="button"
+            rel="nofollow"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+  
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" >
+          © 2023 Copyright:
+        </div>
+        <!-- Copyright -->
+      </footer>
+  
+      
+    </body>
+  </html>

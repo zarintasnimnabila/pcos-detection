@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: 20px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: tomato;
+}
+input[type="submit"]:hover {
+  background-color: rgb(22, 107, 33);
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title {
+  align-items: center;
+}
+
+
+.fill{
+    display: inline;
+}
